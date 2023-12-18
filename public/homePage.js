@@ -26,7 +26,9 @@ function getRates() {
         }
     });
 }
-setInterval(getRates(), 60000);
+
+getRates();
+setInterval(getRates, 60000);
 
 //операции с деньгами
 const moneyManager = new MoneyManager();
